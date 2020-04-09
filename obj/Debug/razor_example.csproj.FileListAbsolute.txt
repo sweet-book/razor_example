@@ -1,15 +1,12 @@
 D:\src\razor_example\bin\razor_example.dll.config
 D:\src\razor_example\bin\razor_example.dll
 D:\src\razor_example\bin\razor_example.pdb
+D:\src\razor_example\bin\standardLib.dll
 D:\src\razor_example\bin\System.Net.Http.dll
-D:\src\razor_example\bin\Newtonsoft.Json.pdb
-D:\src\razor_example\bin\Newtonsoft.Json.xml
-D:\src\razor_example\bin\System.Web.Optimization.xml
+D:\src\razor_example\bin\standardLib.pdb
 D:\src\razor_example\bin\System.Net.Http.xml
 D:\src\razor_example\bin\ko\System.Net.Http.resources.dll
 D:\src\razor_example\obj\Debug\razor_example.csprojAssemblyReference.cache
 D:\src\razor_example\obj\Debug\razor_example.csproj.CopyComplete
 D:\src\razor_example\obj\Debug\razor_example.dll
 D:\src\razor_example\obj\Debug\razor_example.pdb
-D:\src\razor_example\bin\standardLib.dll
-D:\src\razor_example\bin\standardLib.pdb

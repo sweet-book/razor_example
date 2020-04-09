@@ -12,26 +12,33 @@
     Response.Headers.Remove("Server");
 }<!DOCTYPE html>
 <html lang="ko-KR" prefix="og: http://ogp.me/ns#">
-    <head lang="ko">
-        <title>@Page.Title</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="/dist/style.css" rel="stylesheet" />
-        @RenderSection("head", required: false)
-    </head>
-    <body class="d-flex flex-column h-100">
-        @RenderPage("~/layout/_header.cshtml")
-        <main role="main" class="flex-shrink-0">
-            <div class="container">
+<head lang="ko">
+    <title>@Page.Title</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/dist/css/shop-homepage.css" rel="stylesheet" />
+    <link href="/dist/css/style.css" rel="stylesheet" />
+    <script src="/dist/js/jquery-1.11.3.min.js"></script>
+    @RenderSection("head", required: false)
+</head>
+<body>
+    @RenderPage("~/layout/_header.cshtml")
+    <main class="container">
+        <div class="row">
+            @RenderPage("~/layout/_sidebar.cshtml")
+            <div class="col-md-9">
                 @RenderBody()
             </div>
-        </main>
-        @RenderPage("~/layout/_footer.cshtml")
-        @RenderSection("Scripts", required: false)
-    </body>
+        </div>
+    </main>
+    @RenderPage("~/layout/_footer.cshtml")
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
 </html>

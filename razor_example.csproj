@@ -98,14 +98,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dist\js\jquery-1.11.3.min.js" />
+    <Content Include="dist\css\shop-homepage.css" />
+    <Content Include="dist\css\style.css" />
     <Content Include="index.cshtml" />
+    <Content Include="layout\_footer.cshtml" />
+    <Content Include="layout\_header.cshtml" />
+    <Content Include="layout\_siteLayout.cshtml" />
+    <Content Include="layout\_sidebar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="_siteLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -113,9 +119,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="dist\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
