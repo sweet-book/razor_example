@@ -11,3 +11,5 @@ D:\src\razor_example\obj\Debug\razor_example.csprojAssemblyReference.cache
 D:\src\razor_example\obj\Debug\razor_example.csproj.CopyComplete
 D:\src\razor_example\obj\Debug\razor_example.dll
 D:\src\razor_example\obj\Debug\razor_example.pdb
+D:\src\razor_example\bin\standardLib.dll
+D:\src\razor_example\bin\standardLib.pdb

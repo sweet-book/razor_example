@@ -1,4 +1,10 @@
-﻿@{
-   Layout = @"~/layout/_siteLayout.cshtml"; 
+﻿@using standardLib;
+@{
+    Layout = @"~/layout/_siteLayout.cshtml";
+
+    /*
+    .NET 4.0 CSHTML 2 기준 샘플 사이트
+    */
+    var list = DB.Query("select Top(20) * from Member with(nolock);");
 }
-<div>테스트</div>
+<div>테스트 - @(new HtmlString(list.Select(n => n["name"].ToString()).Aggregate("", (a, b) => a + "<br />" + b)))</div>
